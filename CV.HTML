@@ -8,9 +8,14 @@
 </head>
 <script lang="javascript">
     let show = true;
-    function toggleDisplay() {
+
+    function toggleDisplaycontact() {
         show = !show;
         document.getElementById("contact").style.display = (show) ? "block" : "none";
+    }
+    function toggleDisplayWorkHistory() {
+        show = !show;
+        document.getElementById("WorkHistory").style.display = (show) ? "block" : "none";
     }
 </script>
     <p>
@@ -21,17 +26,40 @@
             
         </select>    
     </p>
+    <p>
+        <select>
+            <option>Sales</option>
+            <option>Tech</option>
+            <option>Sales Support</option>
+        </select>
+    </p>
 <body>
-    <button onclick="toggleDisplay()">Show/Hide Contact Info</button>
+ <div>
+    <button onclick="toggleDisplaycontact()">Show/Hide Contact Info</button>
     <title>My CV</title>
- 
 
-<h1>Jeffrey D. North Resume</h1>
+  <link href="CSS/main.css" rel="stylesheet">
+    
+</div>
+
+<div id="name">
+  <h1>Jeffrey D. North Resume</h1>
+</div>
+
 <div  id="contact">
 <h3>Contact Information</h3>
-    <address>Address: 54 Sugar Road Milford, OH 45150 Mobile 513.288.7777 Email: jnorth@tql.com</address>
-    <br></br>
+    <span >Jeffrey D. North</span>
+    <address>Address: 54 Sugar Road Milford, OH 45150 Mobile 513.288.7777 </address>
+</div>
+
+        <div id="email">
+        Email: jnorth@tql.com</address>
+        </div>
+
+    <div id="Technology">
     <h3>Technology</h3>
+    </div>
+    <div>
     <ul>
         <li>GitHub</li>
              <li>SQL</li>
@@ -39,10 +67,13 @@
               <li>Entity Framework</li>
                <li> Linq Query</li>
                <li>HTML</li>
-                </ul>
- 
+                <li>ul</li>
  </div>
-    <h3>Work History</h3>
+
+ <div id="WorkHistory">
+    <h3>Work History</h3> 
+    </div>
+    <div>  
     <p>
         <span>Regional LDL,</span>
         <span>Batavia, OH,</span>
@@ -58,8 +89,13 @@
             <li>Introduced Deliberate Practice Workshops</li>
             <li>Improved LAET BR Production and Junior BR Production</li>
         </ul>
-    </p>
+        </p>
+    </div>
+
+    <div id="Education">
     <h3>Education</h3>
+    </div>
+    <div>
     <p>
     <span>University of Cincinnati</span>
     <ul>
@@ -67,5 +103,6 @@
             <li>Graduated 1986</li>
     </ul>
     </p>
+    </div>
 </body>
   
