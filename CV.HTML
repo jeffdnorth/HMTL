@@ -6,7 +6,28 @@
     <meta name="viewport" content="width=device-width>, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script lang="javascript">
+    let show = true;
+    function toggleDisplay() {
+        show = !show;
+        document.getElementById("contact").style.display = (show) ? "block" : "none";
+    }
+</script>
+    <p>
+        <select>
+            <option>Ohio</option>
+            <option>Kentucky</option>
+            <option>Indiana</option>
+            
+        </select>    
+    </p>
+<body>
+    <button onclick="toggleDisplay()">Show/Hide Contact Info</button>
+    <title>My CV</title>
+ 
+
 <h1>Jeffrey D. North Resume</h1>
+<div  id="contact">
 <h3>Contact Information</h3>
     <address>Address: 54 Sugar Road Milford, OH 45150 Mobile 513.288.7777 Email: jnorth@tql.com</address>
     <br></br>
@@ -17,7 +38,10 @@
              <li>C#</li>
               <li>Entity Framework</li>
                <li> Linq Query</li>
+               <li>HTML</li>
                 </ul>
+ 
+ </div>
     <h3>Work History</h3>
     <p>
         <span>Regional LDL,</span>
@@ -34,10 +58,14 @@
             <li>Introduced Deliberate Practice Workshops</li>
             <li>Improved LAET BR Production and Junior BR Production</li>
         </ul>
-     <p>
-    <h3>Education</h3>
-       <ul>University of Cincinnati</ul>
-       <li>Bachelor of Science in Marketing</li>
-       <li>Graduated 1986</li>
     </p>
+    <h3>Education</h3>
+    <p>
+    <span>University of Cincinnati</span>
+    <ul>
+            <li>Bachelor of Science in Marketing</li>
+            <li>Graduated 1986</li>
+    </ul>
+    </p>
+</body>
   
