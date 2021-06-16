@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Document</title>
+    <script lang="javascript">
+        // const is declaring value clicked for use further below, we came back up to declare value
+        const clicked =() => {
+        //  in order to get access to html we have to do it progrmatically w a getElement and selector
+        let inputControl = document.getElementById("inp");
+        // let user type in what they want
+        let inputCtrlValue = inputControl.value 
+        // have to access to 2nd input box
+        let outputControl = document.getElementById("out");
+        outputControl.value = inputCtrlValue;
+        }
+        </script>
+</head>
+<body>
+<!-- My first java script -start w html below first then do java s above...onclick is an event -->
+<input id="inp" type="text" value="ABC">
+<button onclick="clicked()">Click me!</button>
+<input id="out" type="text" value="ZYZ">
+</body>
+</html>
