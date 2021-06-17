@@ -23,7 +23,7 @@
     const display = ()=> {
     let inpCtrl = document.getElementById("nbr");
     inpCtrl.value = nbr;
-    // adding colr using modulo evaluation if evenly dividable by 2 display red, other than black
+    // adding colr using modulo evaluation if evenly dividable by 2 display red, other then black
     inpCtrl.style.color = (nbr % 2 == 0) ? "red" : "black";
     inpCtrl.style.fontStyle = (nbr % 3 == 0) ? "italic" : "normal";
     inpCtrl.style.fontWeight = (nbr % 7 == 0) ? "bold" : "normal";
