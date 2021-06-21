@@ -4,7 +4,7 @@ let user = null;
 $(() => {
 
     let id = getUrlParms(document.URL).id;
-    $.getJSOM(`http://localhost:40972/apiusers/${id}`)
+    $.getJSON(`http://localhost:40972/api/users/${id}`)
 
    .done((res)  => {
        console.debug(res);
@@ -15,10 +15,8 @@ $(() => {
        console.error(err);
    })
 
- 
 
-
-});
+})
 
 const display = () => {
     $("#xId").text(user.id); $("#xId").text(user.id);
