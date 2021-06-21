@@ -1,7 +1,7 @@
 let users = [];
 
 //jquery ready function
-$(() => {
+$() => {
 
     $.getJSON("http://localhost:40972/api/users")
         .done((res) => {
